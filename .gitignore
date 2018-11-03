@@ -1,0 +1,9 @@
+
+.vs/
+Sandbox/build/
+Sandbox/build-int/
+Strata/build/
+Strata/build-int/
+Sandbox/package
+Strata/lib
+*.user
