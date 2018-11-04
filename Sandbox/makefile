@@ -45,7 +45,7 @@ SOURCES		:=	source
 DATA		:=	data
 INCLUDES	:=	include
 EXEFS_SRC	:=	exefs_src
-#ROMFS		:=	assets
+ROMFS		:=	assets
 
 STRATALIB	:=  $(dir $(realpath $(firstword $(CURDIR))))Strata
 
@@ -68,7 +68,7 @@ CXXFLAGS	:= $(CFLAGS) -fno-rtti -fexceptions -std=c++17
 ASFLAGS	:=	-g $(ARCH)
 LDFLAGS	=	-specs=$(DEVKITPRO)/libnx/switch.specs -g $(ARCH) -Wl,-Map,$(notdir $*.map)
 
-LIBS	:= -lglad -lEGL -lglapi -ldrm_nouveau -lnx -lm -lstrata
+LIBS	:=  -lstrata -lglad -lEGL -lglapi -ldrm_nouveau -lnx -lm
 
 #---------------------------------------------------------------------------------
 # list of directories containing libraries, this must be the top level containing

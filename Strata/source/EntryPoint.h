@@ -13,6 +13,7 @@
 #include <switch.h>
 #include <iostream>
 #include <unistd.h>
+
 #define TRACE(fmt,...) printf("%s: " fmt "\n", __PRETTY_FUNCTION__, ## __VA_ARGS__)
 
 static int s_nxlinkSock = -1;
